@@ -1,6 +1,0 @@
-<Modules>
-  <Module PersistentId="B82B073E-C75D-4BD7-8750-389C923E7918" ModuleId="WebHookScheduler" />
-  <Module PersistentId="CC48B6F4-70F5-4A60-8A86-60D591952138" ModuleId="WebHookModule.Messages" />
-  <Module PersistentId="7897A91D-F47B-4F67-95EF-2285367BF56F" ModuleId="ConsoleApplication1" />
-  <Module PersistentId="32980D74-4335-4612-B66B-4DF94F4701E8" ModuleId="WebHookModule.Processor" />
-</Modules>
