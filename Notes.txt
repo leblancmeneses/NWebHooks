@@ -1,0 +1,37 @@
+Contact Robust Haven Inc for:
+1) Software Architecture, Implementation
+2) Knowledge Transfer, Training
+3) License existing libraries built by Robust Haven Inc over 3 years and production tested.
+
+==================================
+
+Launch as startup these 3 projects in VS debugger.
+ ExampleStarter
+ WebHookModule.Processor
+ WebHookModule.Scheduler
+
+ To see everything in action
+ Message should arrive form ExampleStarter and propgate to: WebHookMessageHandler where it will throw a NotImplementedException();
+
+ =================================
+
+
+ Production Deployment Sample:
+
+ Topshelf:
+ =========
+ WebHookModule.Processor.exe install /instance:Processor001
+ WebHookModule.Scheduler.exe install /instance:Processor001
+
+ WebHookModule.Processor.exe uninstall /instance:Processor002
+ WebHookModule.Scheduler.exe uninstall /instance:Processor002
+
+
+ NServiceBus:
+ ============
+ If you integrate the distributor you will need a different config for the worker nodes to register with distributors.
+ To install distributor:
+ NServiceBus.Host.exe /install /startManually /serviceName:WebHookDistributor /instance:Distributor001
+
+
+
